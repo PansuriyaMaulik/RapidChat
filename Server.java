@@ -63,6 +63,8 @@ class Server {
 
         // Thread -- Write the message to the client
         Runnable r2 = () -> {
+            System.out.println("Write the  message from the client...");
+
             // write the infinit message to the client
             while (true) {
                 try {
@@ -87,6 +89,6 @@ class Server {
 
     public static void main(String[] args) {
         System.out.println("Server is starting...");
-        Server s = new Server();
+        new Server();
     }
 }
